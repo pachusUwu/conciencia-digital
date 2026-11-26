@@ -10,7 +10,6 @@
 
 
 def leer_si_no(pregunta):
-    """Pide una respuesta S/N y la devuelve como booleano (True = SI, False = NO)."""
     while True:
         respuesta = input(pregunta).strip().lower()
         if respuesta in ("s", "si", "sí"):
@@ -26,8 +25,6 @@ print("==================================================")
 print(" Estudiantes: Ian Quiroga, Santino Laudati y Dante Iglesias")
 print("==================================================\n")
 
-# Motivo que declara el estudiante. Se muestra, pero NO cambia la decision:
-# la ley solo contempla la autorizacion docente y la emergencia validada.
 motivo = input("=> Motivo por el que quiere usar el celular: ").strip()
 
 # Simulamos las variables de contexto del aula
